@@ -181,7 +181,57 @@
 		  ""
 		],
 		"description": "Jquery Window Resize"
-	  },
+	},
+
+	"JS vanilla document ready ": {
+		"prefix": "z_vanilla_document_ready",
+		"body": [
+		  "document.addEventListener(\"DOMContentLoaded\", function(event) { ",
+		  "    $0",
+		  "});"
+		],
+		"description": "JS vanilla document ready "
+	},
+
+	"JS Vanilla Click Listener": {
+		"prefix": "z_vanilla_click_event",
+		"body": [
+		  "var ${1:variable_name} = document.getElementById(\"${1:variable_name ${2:variable_name}}\");",
+		  "${1:variable_name ${3:variable_name}}.addEventListener('click', function() {",
+		  "    console.log('Test Click Event');",
+		  "});"
+		],
+		"description": "JS Vanilla Click Listener"
+	},
+
+	"JS Vanilla Get Element": {
+		"prefix": "z_vanilla_get_element",
+		"body": [
+		  "var ${1:variable_name} = document.querySelector('${2:#elementid}');"
+		],
+		"description": "JS Vanilla Get Element"
+	},
+
+	"JS Vanilla Set Attribute": {
+		"prefix": "z_vanilla_attr",
+		"body": [
+		  "document.querySelector('${1:.className_name}').setAttribute(\"style\", \"${2:background:yellow}\");"
+		],
+		"description": "JS Vanilla Set Attribute"
+	},
+
+	"JS Vanilla Add Click Events on classes": {
+		"prefix": "z_vanilla_click_on_classes",
+		"body": [
+		  "let ${1:variable_name} = document.querySelectorAll('${3:.classname}');",
+		  "Array.from(${1:variable_name ${2:variable_name}}).forEach(link => {",
+		  "    link.addEventListener('click', function(event) {",
+		  "        console.log('Test');",
+		  "    });",
+		  "});"
+		],
+		"description": "JS Vanilla Add Click Events on classes"
+	},
 
 
 	"HTML - Bootstrap Styleheet": {
@@ -215,5 +265,15 @@
 		  "|----------------------------------------------*/"
 		],
 		"description": "Others - Comment"
-	}
+	},
+	"JS Test": {
+		"prefix": "z_test",
+		"body": [
+		  "var ${1:variable_name} = document.getElementById(\"${1:variable_name ${2:variable_name}}\");",
+		  "${1:variable_name ${3:variable_name}}.addEventListener('click', function() {",
+		  "    console.log('Test');",
+		  "});"
+		],
+		"description": "JS Test"
+	  }
 }
