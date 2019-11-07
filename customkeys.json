@@ -151,8 +151,8 @@
 	"JS For Loop": {
 		"prefix": "z_js_for_loop",
 		"body": [
-		  "for(var i = 0; i < tab.length; i++){",
-		  "    /* Run code here */",
+		  "for(var i = 0; i < ${1:tab.length}; i++){",
+		  "    ${2:/* Run code here */}",
 		  "}"
 		],
 		"description": "JS For Loop"
@@ -160,7 +160,7 @@
 	"JS Open Link in New Tab": {
 		"prefix": "z_js_open_new_tab",
 		"body": [
-		  "window.open('http://indo.mt5.com', '_blank');"
+		  "window.open('${1:http://google.com}', '_blank');"
 		],
 		"description": "JS Open Link in New Tab"
 	},
@@ -262,7 +262,7 @@
 		"body": [
 		  "/*-----------------------------------------------",
 		  "| Helper Methods",
-		  "|----------------------------------------------*/"
+		  "|----------------------------------------------*/$0"
 		],
 		"description": "Others - Comment"
 	},
