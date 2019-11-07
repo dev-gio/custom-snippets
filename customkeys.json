@@ -2,7 +2,7 @@
 	"CSS Width and Height": {
 		"prefix": "z_css_width_height",
 		"body": [
-		  "@media (width: 812px) and (height: 375px){",
+		  "@media (width: ${1:812}px) and (height: ${2:375}px){",
 		  "    ",
 		  "}"
 		],
@@ -11,8 +11,8 @@
 	"CSS Max Width": {
 		"prefix": "z_css_max_width",
 		"body": [
-		  "@media screen and (max-width: 1024px) {",
-		  "    ",
+		  "@media screen and (max-width: ${1:1024}px) {",
+		  "    $0",
 		  "}",
 		  ""
 		],
@@ -34,8 +34,8 @@
 	"JS Set Interval": {
 		"prefix": "z_js_setInterval",
 		"body": [
-		  "var name_var = setInterval(function () {",
-		  "    /* Run code here */",
+		  "var ${1:name_var} = setInterval(function () {",
+		  "    ${2:/* Run code here */}",
 		  "}, 1000);",
 		  ""
 		],
@@ -44,15 +44,15 @@
 	"JS Clear Interval": {
 		"prefix": "z_js_clearInterval",
 		"body": [
-		  "clearInterval(name_var);"
+		  "clearInterval(${1:name_var});"
 		],
 		"description": "JS Clear Interval"
 	},
 	"JS Jquery Click": {
 		"prefix": "z_jquery_click",
 		"body": [
-		  "$(document).on(\"click\", \"#elementid\", function () {",
-		  "    /* Enter your code here */",
+		  "$(document).on(\"click\", \"${1:#elementid}\", function () {",
+		  "    ${2:/* Enter your code here */}",
 		  "});"
 		],
 		"description": "JS Jquery Click"
@@ -61,7 +61,7 @@
 		"prefix": "z_js_trycatch",
 		"body": [
 		  "try {",
-		  "    ",
+		  "    $0",
 		  "} catch (err) {",
 		  "    console.log('Error Encountered: ' + err);",
 		  "}"
@@ -71,15 +71,15 @@
 	"JS Switch Case": {
 		"prefix": "z_js_switch_case",
 		"body": [
-		  "switch (name_var) {",
-		  "    case \"condition1\":",
-		  "        // code",
+		  "switch (${1:name_var}) {",
+		  "    case \"${2:condition1}\":",
+		  "        ${3:// code}",
 		  "        break;",
-		  "    case \"condition2\":",
-		  "        // code        ",
+		  "    case \"${4:condition2}\":",
+		  "        ${5:// code}",
 		  "        break;",
 		  "    default:",
-		  "        // code",
+		  "        ${6:// code}",
 		  "        break;",
 		  "}"
 		],
@@ -89,7 +89,7 @@
 		"prefix": "z_jquery_document_ready",
 		"body": [
 		  "$(document).ready(function(){",
-		  "    ",
+		  "    $0",
 		  "});"
 		],
 		"description": "Jquery Document Ready"
@@ -97,35 +97,35 @@
 	"Jquery Add Class": {
 		"prefix": "z_jquery_add_class",
 		"body": [
-		  "$('#show').addClass('wrap-container');"
+		  "$('${1:#show}').addClass('${2:wrap-container}');"
 		],
 		"description": "Jquery Add Class"
 	},
 	"Jquery Remove Class": {
 		"prefix": "z_jquery_remove_class",
 		"body": [
-		  "$('#show').removeClass('wrap-container');"
+		  "$('${1:#show}').removeClass('${2:wrap-container}');"
 		],
 		"description": "Jquery Remove Class"
 	},
 	"Jquery Attr Style": {
 		"prefix": "z_jquery_attr",
 		"body": [
-		  "$('#wrap-container').attr('style', 'z-index: 999!important;');"
+		  "$('${1:#wrap-container}').attr('style', '${2:z-index: 999!important;}');"
 		],
 		"description": "Jquery Attr Style"
 	},
 	"JS Inner Width": {
 		"prefix": "z_js_inner_width",
 		"body": [
-		  "window.innerWidth"
+		  "window.innerWidth$0"
 		],
 		"description": "JS Inner Width"
 	},
 	"Jquery Inner Width": {
 		"prefix": "z_jquery_inner_width",
 		"body": [
-		  "$(window).width()"
+		  "$(window).width()$0"
 		],
 		"description": "Jquery Inner Width"
 	},
