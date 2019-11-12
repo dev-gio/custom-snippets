@@ -1,7 +1,8 @@
 
 
 # custom-snippets
-This repository contains some of the snippets (Emmet-like function) for Visual Studio
+This repository contains some of my user snippets (Emmet-like function) for the purpose of quick coding format for Visual Studio.
+Note: Created for Personal use.
 
 ### Setup instruction
    Open Visual Studio Code

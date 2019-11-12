@@ -266,6 +266,41 @@
 		],
 		"description": "Others - Comment"
 	},
+	"JSON format": {
+		"prefix": "z_json_format",
+		"body": [
+		  "[",
+		  "    {",
+		  "        \"title\":\"Demo Title\",",
+		  "        \"description\":\"Demo Description\"",
+		  "    },",
+		  "    {",
+		  "        \"title\":\"Demo Title 2\",",
+		  "        \"description\":\"Demo Description 2\"",
+		  "    }$0",
+		  "]"
+		],
+		"description": "JSON format"
+	},
+	"Fetch JSON file": {
+		"prefix": "z_fetch_json_file",
+		"body": [
+		  "fetch('sites.json')",
+		  "    .then((res) => res.json())",
+		  "    .then((data) => {",
+		  "        let output = '';",
+		  "        data.forEach(function (link) {",
+		  "            output += `",
+		  "                <div class=\"link-container\">",
+		  "                    <a href=\"${link.url}\" target=\"_blank\">${link.title}</a>",
+		  "                </div>",
+		  "            `;",
+		  "        });",
+		  "        document.querySelector('.popup-body').innerHTML = output;",
+		  "    });"
+		],
+		"description": "Fetch JSON file"
+	},
 	"JS Test": {
 		"prefix": "z_test",
 		"body": [
