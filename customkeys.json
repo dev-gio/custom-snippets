@@ -310,5 +310,37 @@
 		  "});"
 		],
 		"description": "JS Test"
-	  }
+	},
+	"Markdown Code": {
+		"prefix": "z_md_code",
+		"body": [
+		  "```${1:js}",
+		  "${2:/* enter code here */}",
+		  "```"
+		],
+		"description": "Markdown Code"
+	},
+	"Markdown Link": {
+		"prefix": "z_md_link",
+		"body": [
+		  "[${1:text}](${2:www.google.com})"
+		],
+		"description": "Markdown Link"
+	},
+	"Markdown Image": {
+		"prefix": "z_md_image",
+		"body": [
+		  "![](${1:www.imageURL.com})"
+		],
+		"description": "Markdown Image"
+	},
+	"Express Get": {
+		"prefix": "z_node_get",
+		"body": [
+		  "app.get('/api/${1:namePath}', (req, res) => {",
+		  "    ${2:// enter code here}",
+		  "});"
+		],
+		"description": "Express Get"
+	}
 }
